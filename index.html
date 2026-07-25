@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,66 +7,54 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <header>
-        <h1>🤖 AI Interview Preparation Assistant</h1>
-        <p>Prepare smarter with AI-powered interview questions and answers.</p>
-    </header>
+<header>
+    <h1>🤖 AI Interview Preparation Assistant</h1>
+    <p>Prepare smarter with AI-powered interview questions.</p>
+</header>
 
-    <main class="container">
+<div class="container">
 
-        <div class="card">
+    <div class="card">
 
-            <h2>Enter Job Role</h2>
+        <h2>Interview Details</h2>
 
-            <input
-                type="text"
-                id="jobRole"
-                placeholder="Example: Frontend Developer">
+        <input
+            type="text"
+            id="jobRole"
+            placeholder="Enter Job Role">
 
-            <select id="experience">
+        <select id="experience">
 
-                <label for="aiModel">Choose AI Model</label>
+            <option>Fresher</option>
+            <option>1-2 Years</option>
+            <option>3-5 Years</option>
+            <option>5+ Years</option>
 
-<select id="aiModel">
-    <option>Gemini AI</option>
-    <option>OpenAI GPT</option>
-    <option>Mock Interview</option>
-</select>
+        </select>
 
-                <option>Fresher</option>
-                <option>1-2 Years</option>
-                <option>3-5 Years</option>
-                <option>5+ Years</option>
+        <button id="generateBtn">
+            Generate Questions
+        </button>
 
-            </select>
+    </div>
 
-            <button id="generateBtn">
-                Generate Questions
-            </button>
+    <div class="card">
 
-        </div>
+        <h2>Interview Questions</h2>
 
-        <div class="card output">
+        <div id="result">
 
-            <h2>Interview Questions</h2>
-
-            <div id="result">
-
-                <p>Your interview questions will appear here.</p>
-
-            </div>
+            <p>Your questions will appear here...</p>
 
         </div>
 
-    </main>
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
