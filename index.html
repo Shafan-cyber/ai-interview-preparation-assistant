@@ -1,1 +1,67 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Preparation Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 AI Interview Preparation Assistant</h1>
+        <p>Prepare smarter with AI-powered interview questions and answers.</p>
+    </header>
+
+    <main class="container">
+
+        <div class="card">
+
+            <h2>Enter Job Role</h2>
+
+            <input
+                type="text"
+                id="jobRole"
+                placeholder="Example: Frontend Developer">
+
+            <select id="experience">
+
+                <option>Fresher</option>
+                <option>1-2 Years</option>
+                <option>3-5 Years</option>
+                <option>5+ Years</option>
+
+            </select>
+
+            <button id="generateBtn">
+                Generate Questions
+            </button>
+
+        </div>
+
+        <div class="card output">
+
+            <h2>Interview Questions</h2>
+
+            <div id="result">
+
+                <p>Your interview questions will appear here.</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
