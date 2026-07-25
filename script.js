@@ -1,4 +1,3 @@
-
 const button = document.getElementById("generateBtn");
 const result = document.getElementById("result");
 
@@ -7,7 +6,7 @@ button.addEventListener("click", function () {
     const role = document.getElementById("jobRole").value;
     const experience = document.getElementById("experience").value;
 
-    if (role === "") {
+    if (role.trim() === "") {
         alert("Please enter a job role.");
         return;
     }
@@ -18,27 +17,24 @@ button.addEventListener("click", function () {
         <ol>
             <li>Tell me about yourself.</li>
             <li>Why do you want to become a ${role}?</li>
-            <li>What are your strengths and weaknesses?</li>
-            <li>Explain one project you have worked on.</li>
+            <li>What are your strengths?</li>
+            <li>Explain one project you have completed.</li>
             <li>How do you solve difficult problems?</li>
             <li>Why should we hire you?</li>
             <li>Where do you see yourself in 5 years?</li>
-            <li>Describe a challenging situation and how you handled it.</li>
-            <li>What technologies are you familiar with?</li>
+            <li>What technologies do you know?</li>
+            <li>How do you handle pressure?</li>
             <li>Do you have any questions for us?</li>
         </ol>
-
-        <br>
 
         <h3>Preparation Tips</h3>
 
         <ul>
-            <li>✔ Practice coding every day.</li>
-            <li>✔ Revise your projects thoroughly.</li>
-            <li>✔ Learn common interview questions.</li>
+            <li>✔ Revise your projects.</li>
+            <li>✔ Practice coding daily.</li>
             <li>✔ Improve communication skills.</li>
-            <li>✔ Be confident and honest.</li>
+            <li>✔ Learn company basics.</li>
+            <li>✔ Be confident.</li>
         </ul>
     `;
-
 });
