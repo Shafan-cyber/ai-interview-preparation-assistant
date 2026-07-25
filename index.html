@@ -28,21 +28,24 @@
             placeholder="Enter Job Role">
 
         <select id="experience">
-
             <option>Fresher</option>
             <option>1-2 Years</option>
             <option>3-5 Years</option>
             <option>5+ Years</option>
+        </select>
 
+        <input
+            type="text"
+            id="company"
+            placeholder="Enter Company Name (Google, TCS, Zoho...)">
+
+        <select id="aiModel">
+            <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
         </select>
 
         <button id="generateBtn">
             Generate Questions
         </button>
-
-        <select id="aiModel">
-    <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
-</select>
 
     </div>
 
@@ -51,9 +54,7 @@
         <h2>Interview Questions</h2>
 
         <div id="result">
-
             <p>Your questions will appear here...</p>
-
         </div>
 
     </div>
