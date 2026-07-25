@@ -14,6 +14,11 @@ button.addEventListener("click", function () {
     }
 
     result.innerHTML = `
+    <h3>⏳ Generating AI Interview Questions...</h3>
+    <p>Please wait...</p>
+`;
+
+    result.innerHTML = `
         <h2>${role} Interview Questions</h2>
 
         <p><strong>Company:</strong> ${company || "Any Company"}</p>
