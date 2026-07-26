@@ -107,3 +107,19 @@ button.addEventListener("click", function () {
     }, 1500);
 
 });
+
+// Theme Toggle
+
+const themeBtn = document.getElementById("themeToggle");
+
+themeBtn.addEventListener("click", function () {
+
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+        themeBtn.innerHTML = "🌞 Light Mode";
+    } else {
+        themeBtn.innerHTML = "🌙 Dark Mode";
+    }
+
+});
