@@ -1,15 +1,20 @@
 const button = document.getElementById("generateBtn");
 const result = document.getElementById("result");
 const loading = document.getElementById("loading");
+const themeBtn = document.getElementById("themeToggle");
+
+// ===============================
+// Generate Interview Questions
+// ===============================
 
 button.addEventListener("click", function () {
 
-    const role = document.getElementById("jobRole").value;
+    const role = document.getElementById("jobRole").value.trim();
     const experience = document.getElementById("experience").value;
-    const company = document.getElementById("company").value;
+    const company = document.getElementById("company").value.trim();
     const difficulty = document.getElementById("difficulty").value;
 
-    if (role.trim() === "") {
+    if (role === "") {
         alert("Please enter a Job Role.");
         return;
     }
@@ -39,7 +44,7 @@ button.addEventListener("click", function () {
                 <li>Explain one project you have completed.</li>
                 <li>What are your strengths?</li>
                 <li>What are your weaknesses?</li>
-                <li>Explain your technical skills related to ${role}.</li>
+                <li>Explain your technical skills related to the ${role} role.</li>
                 <li>How do you solve difficult problems?</li>
                 <li>What do you know about ${company || "our company"}?</li>
                 <li>Why should we hire you?</li>
@@ -61,17 +66,28 @@ button.addEventListener("click", function () {
 
             <div style="margin-top:20px;">
                 <button id="copyBtn">📋 Copy Questions</button>
-                <button id="downloadBtn" style="margin-top:10px;">📄 Download PDF</button>
+                <button id="downloadBtn" style="margin-top:10px;">
+                    📄 Download PDF
+                </button>
             </div>
         `;
 
+        // ===============================
         // Copy Questions
+        // ===============================
+
         document.getElementById("copyBtn").addEventListener("click", function () {
+
             navigator.clipboard.writeText(result.innerText);
+
             alert("✅ Questions copied successfully!");
+
         });
 
+        // ===============================
         // Download / Print PDF
+        // ===============================
+
         document.getElementById("downloadBtn").addEventListener("click", function () {
 
             const content = result.innerText;
@@ -82,20 +98,34 @@ button.addEventListener("click", function () {
                 <html>
                 <head>
                     <title>Interview Questions</title>
+
                     <style>
+
                         body{
-                            font-family: Arial, sans-serif;
+                            font-family:Arial,sans-serif;
                             padding:30px;
                             line-height:1.8;
                         }
+
                         h2{
                             color:#2563eb;
                         }
+
+                        pre{
+                            white-space:pre-wrap;
+                            font-size:16px;
+                        }
+
                     </style>
+
                 </head>
+
                 <body>
+
                     <pre>${content}</pre>
+
                 </body>
+
                 </html>
             `);
 
@@ -108,18 +138,22 @@ button.addEventListener("click", function () {
 
 });
 
-// Theme Toggle
-
-const themeBtn = document.getElementById("themeToggle");
+// ===============================
+// Dark / Light Mode
+// ===============================
 
 themeBtn.addEventListener("click", function () {
 
     document.body.classList.toggle("light-mode");
 
     if (document.body.classList.contains("light-mode")) {
+
         themeBtn.innerHTML = "🌞 Light Mode";
+
     } else {
+
         themeBtn.innerHTML = "🌙 Dark Mode";
+
     }
 
 });
