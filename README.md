@@ -1,31 +1,40 @@
 # 🚀 AI Interview Preparation Assistant
 
-An interactive web application that helps users prepare for technical interviews by generating interview questions based on the selected job role, experience level, company, and difficulty.
+A modern and responsive web application that helps users prepare for technical interviews by generating interview questions based on **Job Role, Experience, Company, and Difficulty Level**.
+
+Built using **HTML, CSS, and JavaScript**, this project is designed as a portfolio project for aspiring developers.
+
+---
 
 ## 🌐 Live Demo
 
-👉 https://shafan-cyber.github.io/ai-interview-preparation-assistant/
+👉 https://shafan-cyber.github.io/AI-Interview-Preparation-Assistant/
+
+> Replace the link above with your GitHub Pages URL after deployment.
 
 ---
 
 ## 📸 Preview
 
-<img width="100%" alt="Project Preview" src="https://via.placeholder.com/1200x650?text=AI+Interview+Preparation+Assistant">
+![Project Screenshot](screenshot.png)
 
-> Replace this image later with a screenshot of your project.
+> Add a screenshot named **screenshot.png** in your repository.
 
 ---
 
 ## ✨ Features
 
-- 🎯 Job role based interview questions
-- 💼 Company-specific preparation
-- 👨‍💻 Experience level selection
-- 📈 Difficulty selection (Easy / Medium / Hard)
-- 🎨 Modern Glassmorphism UI
+- 🎯 Generate interview questions by Job Role
+- 🏢 Company-specific interview preparation
+- 💼 Experience Level selection
+- 📊 Difficulty Level (Easy / Medium / Hard)
+- 📋 Copy Questions to Clipboard
+- 📄 Download / Print Questions as PDF
+- ⏳ Loading Animation
+- 🌙 Dark / Light Mode
 - 📱 Fully Responsive Design
-- ⚡ Fast and lightweight
-- 🌐 Hosted with GitHub Pages
+- 🎨 Modern Glassmorphism UI
+- ⚡ Smooth Animations
 
 ---
 
@@ -33,20 +42,19 @@ An interactive web application that helps users prepare for technical interviews
 
 - HTML5
 - CSS3
-- JavaScript
-- Google Fonts (Poppins)
-- GitHub Pages
+- JavaScript (ES6)
 
 ---
 
 ## 📂 Project Structure
 
 ```
-ai-interview-preparation-assistant/
+AI-Interview-Preparation-Assistant/
 │
 ├── index.html
 ├── style.css
 ├── script.js
+├── screenshot.png
 └── README.md
 ```
 
@@ -57,27 +65,43 @@ ai-interview-preparation-assistant/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/Shafan-cyber/ai-interview-preparation-assistant.git
+git clone https://github.com/Shafan-cyber/AI-Interview-Preparation-Assistant.git
 ```
 
-2. Open the project folder.
+2. Open the project folder
 
-3. Run `index.html` in your browser.
+```bash
+cd AI-Interview-Preparation-Assistant
+```
+
+3. Open `index.html` in your browser.
+
+---
+
+## 📖 How to Use
+
+1. Enter your **Job Role**
+2. Select your **Experience Level**
+3. Enter a **Company Name**
+4. Select the **Difficulty Level**
+5. Click **Generate Questions**
+6. Copy or Download the generated questions
 
 ---
 
 ## 🎯 Future Improvements
 
 - 🤖 Gemini AI Integration
-- 🎤 Mock Interview Mode
-- 🗣️ Voice-based Interview
-- 📄 Export Questions as PDF
-- 📊 Interview Performance Score
-- 🌙 Dark / Light Theme
+- 🎤 Voice Interview Practice
+- 📊 AI Interview Score
+- 📄 Real PDF Export
+- 💾 Interview History
+- 🔐 User Login
+- ☁️ Cloud Database
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Shafan Abitha**
 
@@ -88,12 +112,20 @@ https://github.com/Shafan-cyber
 
 ## ⭐ Support
 
-If you like this project,
-
-⭐ Star this repository on GitHub.
+If you like this project, please consider giving it a **⭐ Star** on GitHub.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
+
+Feel free to use, modify, and improve this project.
+
+---
+
+## 🙏 Acknowledgements
+
+- Google Fonts
+- GitHub Pages
+- JavaScript Community
