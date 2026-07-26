@@ -27,40 +27,6 @@ body{
     opacity:.9;
 }
 
-/* Premium Input Effects */
-
-input:focus,
-select:focus{
-    outline:none;
-    border:2px solid #60a5fa;
-    box-shadow:0 0 15px rgba(96,165,250,.5);
-    transition:.3s;
-}
-
-/* Premium Button */
-
-button{
-    background:linear-gradient(135deg,#3b82f6,#2563eb);
-    font-size:17px;
-    font-weight:600;
-}
-
-button:hover{
-    transform:translateY(-3px) scale(1.02);
-    box-shadow:0 10px 25px rgba(37,99,235,.5);
-}
-
-/* Card Hover */
-
-.card{
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 40px rgba(0,0,0,.4);
-}
-
 .container{
     max-width:1100px;
     margin:auto;
@@ -75,6 +41,12 @@ button:hover{
     padding:30px;
     border-radius:20px;
     box-shadow:0 8px 30px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
 }
 
 .card h2{
@@ -97,17 +69,24 @@ select{
     background:#fff;
 }
 
+input:focus,
+select:focus{
+    outline:none;
+    border:2px solid #60a5fa;
+    box-shadow:0 0 15px rgba(96,165,250,.5);
+}
+
 button{
-    background:#2563eb;
-    color:white;
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+    color:#fff;
     cursor:pointer;
     font-weight:600;
     transition:.3s;
 }
 
 button:hover{
-    background:#1d4ed8;
-    transform:translateY(-2px);
+    transform:translateY(-3px) scale(1.02);
+    box-shadow:0 10px 25px rgba(37,99,235,.5);
 }
 
 #result{
