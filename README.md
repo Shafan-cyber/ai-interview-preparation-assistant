@@ -1,40 +1,41 @@
-# 🤖 AI Interview Preparation Assistant
+# 🚀 AI Interview Preparation Assistant
 
-A modern Interview Preparation web application built using **HTML, CSS, and JavaScript**. This project helps students and job seekers generate interview questions based on their job role, experience level, company name, and difficulty level.
+An interactive web application that helps users prepare for technical interviews by generating interview questions based on the selected job role, experience level, company, and difficulty.
 
 ## 🌐 Live Demo
 
-🔗 https://shafan-cyber.github.io/ai-interview-preparation-assistant/
+👉 https://shafan-cyber.github.io/ai-interview-preparation-assistant/
 
 ---
 
 ## 📸 Preview
 
-<img width="100%" alt="Project Screenshot" src="https://placehold.co/1200x700?text=AI+Interview+Preparation+Assistant">
+<img width="100%" alt="Project Preview" src="https://via.placeholder.com/1200x650?text=AI+Interview+Preparation+Assistant">
 
-> Replace the image above with a screenshot of your project later.
+> Replace this image later with a screenshot of your project.
 
 ---
 
 ## ✨ Features
 
-- 🎯 Enter Job Role
-- 💼 Select Experience Level
-- 🏢 Company Name Input
-- 📊 Difficulty Level (Easy / Medium / Hard)
-- 🤖 AI-style Interview Questions
-- 📋 Preparation Tips
-- ⏳ Loading Animation
-- 📱 Responsive Design
-- 🎨 Clean and Modern User Interface
+- 🎯 Job role based interview questions
+- 💼 Company-specific preparation
+- 👨‍💻 Experience level selection
+- 📈 Difficulty selection (Easy / Medium / Hard)
+- 🎨 Modern Glassmorphism UI
+- 📱 Fully Responsive Design
+- ⚡ Fast and lightweight
+- 🌐 Hosted with GitHub Pages
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Built With
 
 - HTML5
 - CSS3
-- JavaScript (ES6)
+- JavaScript
+- Google Fonts (Poppins)
+- GitHub Pages
 
 ---
 
@@ -51,7 +52,7 @@ ai-interview-preparation-assistant/
 
 ---
 
-## 🚀 How to Run
+## 🚀 Getting Started
 
 1. Clone the repository
 
@@ -61,19 +62,18 @@ git clone https://github.com/Shafan-cyber/ai-interview-preparation-assistant.git
 
 2. Open the project folder.
 
-3. Open `index.html` in your browser.
+3. Run `index.html` in your browser.
 
 ---
 
 ## 🎯 Future Improvements
 
 - 🤖 Gemini AI Integration
-- 📄 Download Questions as PDF
-- 📋 Copy Questions
-- 🌙 Dark Mode
-- 🎤 Voice Interview Practice
-- 📈 Interview Score Analysis
-- 💾 Save Previous Sessions
+- 🎤 Mock Interview Mode
+- 🗣️ Voice-based Interview
+- 📄 Export Questions as PDF
+- 📊 Interview Performance Score
+- 🌙 Dark / Light Theme
 
 ---
 
@@ -88,11 +88,12 @@ https://github.com/Shafan-cyber
 
 ## ⭐ Support
 
-If you like this project, please ⭐ star the repository on GitHub.
+If you like this project,
+
+⭐ Star this repository on GitHub.
 
 ---
 
 ## 📄 License
 
 This project is licensed under the MIT License.
-
