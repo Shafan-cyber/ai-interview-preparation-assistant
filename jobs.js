@@ -98,8 +98,4 @@ const jobRoles = [
 "Solutions Architect",
 "Enterprise Architect",
 "SAP Consultant",
-"Salesforce Developer",
-"CRM Developer",
-"ERP Consultant",
-"Digital Marketing Executive"
 ];
