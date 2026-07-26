@@ -1,4 +1,4 @@
-const jobRoles = [
+Rconst jobRoles = [
 "Frontend Developer",
 "Backend Developer",
 "Full Stack Developer",
