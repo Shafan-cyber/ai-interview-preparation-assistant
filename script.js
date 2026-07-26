@@ -1,3 +1,14 @@
+// Load Job Roles into Dropdown
+
+const jobRoleDropdown = document.getElementById("jobRole");
+
+jobRoles.forEach(role => {
+    const option = document.createElement("option");
+    option.value = role;
+    option.textContent = role;
+    jobRoleDropdown.appendChild(option);
+});
+
 const button = document.getElementById("generateBtn");
 const result = document.getElementById("result");
 const loading = document.getElementById("loading");
