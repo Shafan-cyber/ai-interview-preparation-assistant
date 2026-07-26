@@ -20,8 +20,6 @@ loading.style.display = "block";
 result.innerHTML = "";
     
     result.innerHTML = `
-
-    loading.style.display = "none";
         <h2>⏳ Generating AI Interview Questions...</h2>
         <p>Please wait...</p>
     `;
