@@ -20,14 +20,13 @@
         Experience Level, Company and Difficulty.
     </p>
 
-    <!-- Dark Mode Button -->
     <button id="themeToggle" class="theme-btn">
         🌙 Dark Mode
     </button>
 
 </header>
 
-<!-- Statistics Section -->
+<!-- Statistics -->
 
 <section class="stats">
 
@@ -37,7 +36,7 @@
     </div>
 
     <div class="stat-box">
-        <h2>10+</h2>
+        <h2>20+</h2>
         <p>Job Roles</p>
     </div>
 
@@ -56,10 +55,31 @@
 
         <h2>Interview Details</h2>
 
-        <input
-            type="text"
-            id="jobRole"
-            placeholder="Enter Job Role">
+        <!-- Job Role Dropdown -->
+
+        <select id="jobRole">
+            <option value="">Select Job Role</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Full Stack Developer</option>
+            <option>Java Developer</option>
+            <option>Python Developer</option>
+            <option>React Developer</option>
+            <option>Node.js Developer</option>
+            <option>Data Analyst</option>
+            <option>Data Scientist</option>
+            <option>AI Engineer</option>
+            <option>Machine Learning Engineer</option>
+            <option>Cyber Security Analyst</option>
+            <option>DevOps Engineer</option>
+            <option>Cloud Engineer</option>
+            <option>UI/UX Designer</option>
+            <option>Mobile App Developer</option>
+            <option>QA Engineer</option>
+            <option>Software Tester</option>
+            <option>System Administrator</option>
+            <option>Network Engineer</option>
+        </select>
 
         <select id="experience">
             <option>Fresher</option>
@@ -79,9 +99,7 @@
             </option>
         </select>
 
-        <label for="difficulty">
-            <strong>Difficulty Level</strong>
-        </label>
+        <label for="difficulty"><strong>Difficulty Level</strong></label>
 
         <select id="difficulty">
             <option value="Easy">Easy</option>
@@ -93,14 +111,9 @@
             🚀 Generate Questions
         </button>
 
-        <!-- Loading -->
-
         <div id="loading" class="loading">
-
             <div class="spinner"></div>
-
             <p>Generating Questions...</p>
-
         </div>
 
     </div>
@@ -112,9 +125,7 @@
         <h2>Interview Questions</h2>
 
         <div id="result">
-
             <p>Your questions will appear here...</p>
-
         </div>
 
     </div>
@@ -126,8 +137,7 @@
     <p>© 2026 AI Interview Preparation Assistant</p>
 
     <p>
-        Developed by
-        <strong>Shafan Abitha</strong>
+        Developed by <strong>Shafan Abitha</strong>
     </p>
 
     <a href="https://github.com/Shafan-cyber"
