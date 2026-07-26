@@ -1,1 +1,127 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Preparation Assistant | Shafan Abitha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+
+    <h1>🚀 AI Interview Preparation Assistant</h1>
+
+    <p>
+        Practice interview questions based on your Job Role,
+        Experience Level, Company and Difficulty.
+    </p>
+
+</header>
+
+<!-- Statistics Section -->
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h2>100+</h2>
+        <p>Interview Questions</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>10+</h2>
+        <p>Job Roles</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>3</h2>
+        <p>Difficulty Levels</p>
+    </div>
+
+</section>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Interview Details</h2>
+
+        <input
+            type="text"
+            id="jobRole"
+            placeholder="Enter Job Role">
+
+        <select id="experience">
+            <option>Fresher</option>
+            <option>1-2 Years</option>
+            <option>3-5 Years</option>
+            <option>5+ Years</option>
+        </select>
+
+        <input
+            type="text"
+            id="company"
+            placeholder="Enter Company Name (Google, TCS, Zoho...)">
+
+        <select id="aiModel">
+            <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
+        </select>
+
+        <label for="difficulty"><strong>Difficulty Level</strong></label>
+
+        <select id="difficulty">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+
+        <button id="generateBtn">
+            🚀 Generate Questions
+        </button>
+
+        <!-- Loading -->
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Generating Questions...</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Interview Questions</h2>
+
+        <div id="result">
+            <p>Your questions will appear here...</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <p>© 2026 AI Interview Preparation Assistant</p>
+
+    <p>
+        Developed by
+        <strong>Shafan Abitha</strong>
+    </p>
+
+    <a href="https://github.com/Shafan-cyber"
+       target="_blank"
+       rel="noopener noreferrer">
+        🐙 GitHub Profile
+    </a>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
