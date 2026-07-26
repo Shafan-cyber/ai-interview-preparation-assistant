@@ -14,6 +14,11 @@ button.addEventListener("click", function () {
     }
 
     // Loading Animation
+    const loading = document.getElementById("loading");
+
+loading.style.display = "block";
+result.innerHTML = "";
+    
     result.innerHTML = `
         <h2>⏳ Generating AI Interview Questions...</h2>
         <p>Please wait...</p>
