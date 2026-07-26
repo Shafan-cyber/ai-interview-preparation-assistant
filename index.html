@@ -1,170 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Interview Preparation Assistant | Shafan Abitha</title>
+const button = document.getElementById("generateBtn");
+const result = document.getElementById("result");
+const loading = document.getElementById("loading");
 
-    <link rel="stylesheet" href="style.css">
+button.addEventListener("click", function () {
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    const role = document.getElementById("jobRole").value;
+    const experience = document.getElementById("experience").value;
+    const company = document.getElementById("company").value;
+    const difficulty = document.getElementById("difficulty").value;
 
-  <header class="hero">
+    if (role.trim() === "") {
+        alert("Please enter a Job Role.");
+        return;
+    }
 
-    <h1>🚀 AI Interview Preparation Assistant</h1>
+    // Show Loading
+    loading.style.display = "block";
+    result.innerHTML = "";
 
-    <p>
-        Practice interview questions based on your Job Role,
-        Experience Level, Company and Difficulty.
-    </p>
+    setTimeout(() => {
 
-</header>
+        // Hide Loading
+        loading.style.display = "none";
 
-    <section class="stats">
+        result.innerHTML = `
+            <h2>🚀 ${role} Interview Questions</h2>
 
-    <div class="stat-box">
-        <h2>100+</h2>
-        <p>Interview Questions</p>
-    </div>
+            <p><strong>🏢 Company:</strong> ${company || "Any Company"}</p>
+            <p><strong>💼 Experience:</strong> ${experience}</p>
+            <p><strong>🎯 Difficulty:</strong> ${difficulty}</p>
 
-    <div class="stat-box">
-        <h2>20+</h2>
-        <p>Job Roles</p>
-    </div>
+            <hr>
 
-    <div class="stat-box">
-        <h2>10+</h2>
-        <p>Companies</p>
-    </div>
+            <ol>
+                <li>Tell me about yourself.</li>
+                <li>Why do you want to join ${company || "our company"}?</li>
+                <li>Why are you interested in the ${role} role?</li>
+                <li>Explain one project you have completed.</li>
+                <li>What are your strengths?</li>
+                <li>What are your weaknesses?</li>
+                <li>Explain your technical skills related to ${role}.</li>
+                <li>How do you solve difficult problems?</li>
+                <li>What do you know about ${company || "our company"}?</li>
+                <li>Why should we hire you?</li>
+            </ol>
 
-    <div class="stat-box">
-        <h2>Free</h2>
-        <p>Forever</p>
-    </div>
+            <hr>
 
-</section>
+            <h3>📚 Preparation Tips</h3>
 
-<div class="container">
+            <ul>
+                <li>✅ Revise your projects.</li>
+                <li>✅ Practice coding every day.</li>
+                <li>✅ Learn about ${company || "the company"}.</li>
+                <li>✅ Improve communication skills.</li>
+                <li>✅ Attend mock interviews.</li>
+            </ul>
 
-    <div class="card">
+            <br>
 
-        <h2>Interview Details</h2>
+            <div style="margin-top:20px;">
+                <button id="copyBtn">📋 Copy Questions</button>
+                <button id="downloadBtn" style="margin-top:10px;">📄 Download PDF</button>
+            </div>
+        `;
 
-        <input
-            type="text"
-            id="jobRole"
-            placeholder="Enter Job Role">
+        // Copy Questions
+        document.getElementById("copyBtn").addEventListener("click", function () {
+            navigator.clipboard.writeText(result.innerText);
+            alert("✅ Questions copied successfully!");
+        });
 
-        <select id="experience">
-            <option>Fresher</option>
-            <option>1-2 Years</option>
-            <option>3-5 Years</option>
-            <option>5+ Years</option>
-        </select>
+        // Download / Print PDF
+        document.getElementById("downloadBtn").addEventListener("click", function () {
 
-        <input
-            type="text"
-            id="company"
-            placeholder="Enter Company Name (Google, TCS, Zoho...)">
+            const content = result.innerText;
 
-        <select id="aiModel">
-            <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
-        </select>
+            const win = window.open("", "_blank");
 
-        <label for="difficulty">Difficulty Level</label>
+            win.document.write(`
+                <html>
+                <head>
+                    <title>Interview Questions</title>
+                    <style>
+                        body{
+                            font-family: Arial, sans-serif;
+                            padding:30px;
+                            line-height:1.8;
+                        }
+                        h2{
+                            color:#2563eb;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <pre>${content}</pre>
+                </body>
+                </html>
+            `);
 
-        <select id="difficulty">
-            <option value="Easy">Easy</option>
-            <option value="Medium">Medium</option>
-            <option value="Hard">Hard</option>
-        </select>
+            win.document.close();
+            win.print();
 
-        <button id="generateBtn">
-            Generate Questions
-        </button>
+        });
 
-        <div id="loading" class="loading">
-    <div class="spinner"></div>
-    <p>Generating Questions...</p>
-</div>
+    }, 1500);
 
-    </div>
-
-    <div class="card">
-
-        <h2>Interview Questions</h2>
-
-        <div id="result">
-            <p>Your questions will appear here...</p>
-        </div>
-
-    </div>
-
-</div>
-
-   <section class="stats">
-
-    <div class="stat-box">
-        <h2>100+</h2>
-        <p>Interview Questions</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>10+</h2>
-        <p>Job Roles</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>3</h2>
-        <p>Difficulty Levels</p>
-    </div>
-
-</section>
-
-    <section class="stats">
-
-    <div class="stat-box">
-        <h2>⚡</h2>
-        <p>AI Powered Questions</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>🎯</h2>
-        <p>Role Based Preparation</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>📈</h2>
-        <p>Difficulty Levels</p>
-    </div>
-
-</section>
-
-   <footer class="footer">
-
-    <p>© 2026 AI Interview Preparation Assistant</p>
-
-    <p>
-        Developed by
-        <strong>Shafan Abitha</strong>
-    </p>
-
-    <a href="https://github.com/Shafan-cyber"
-   target="_blank"
-   rel="noopener noreferrer">
-       🐙 GitHub Profile 
-    </a>
-
-</footer> 
-
-    <script src="script.js"></script>
-
-</body>
-</html>
-
-<div id="loading" class="loading">
-    <div class="spinner"></div>
-    <p>Generating Questions...</p>
-</div>
+});
